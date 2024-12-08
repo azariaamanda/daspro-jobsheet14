@@ -14,8 +14,8 @@ public class CafeOrder {
     // Fungsi iteratif untuk menghitung total harga pesanan
     public static int hitungTotalIteratif(int[] pesanan) {
         int total = 0;
-        for (int harga : pesanan) {
-            total += harga;
+        for (int i = 0; i < pesanan.length; i++) {
+            total += pesanan[i];
         }
         return total;
     }
